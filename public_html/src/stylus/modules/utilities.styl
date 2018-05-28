@@ -1,0 +1,107 @@
+.clearfix
+	clearfix()
+
+.cal-open
+	// position fixed
+	width 100%
+	
+	&::before
+		background-color rgba(0,0,0,0.5)
+		content ''
+		cuadrado(100%)
+		position fixed
+		z-index 1
+
+.fixed
+	position fixed
+
+.hidden
+	display none
+
+.shadow
+	&-base
+		box-shadow 0px 0px 5px rgba(0, 0, 0, 0.5)
+
+
+.show
+	&-form
+		color $azul
+		cuadrado(3.9rem)
+		display inline-block
+		opacity 0.5
+		padding 0.2rem 0.4rem
+		vertical-align middle
+		
+		&:hover
+			opacity 0.999
+			
+		&[aria-expanded="true"]
+			transform rotate(135deg)
+
+.title
+	&-section
+		font-size 2rem
+		margin 3rem auto
+		position relative
+		text-align center
+		text-transform uppercase
+		
+		&::before
+			background-color black
+			bottom -1rem
+			content ''
+			display block
+			height 1px
+			left 30%
+			position absolute		
+			width 40%
+	
+
+.text		
+	&-center
+		text-align center
+		
+		span
+			display inline-block
+			vertical-align middle
+			
+		
+	&-justify
+		text-align justify
+		text-align-last left
+		
+	&-left
+		text-align left
+			
+@media(min-width:$screen-sm)
+	// .stick-lg
+	// 	bottom 0
+	// 	position absolute
+	// 	width 100%
+	
+	.text
+		&-404
+			font-size 17rem
+			
+	.title
+		
+		&-bio,
+		&-section	
+			text-align left
+			
+			&::before
+				left 0
+								
+		&-contacto
+			text-align center
+			
+			&::before
+				left 30%
+				
+@media(min-width:1100px)
+	.stick-lg
+		bottom 0
+		position absolute
+		width 100%
+
+				

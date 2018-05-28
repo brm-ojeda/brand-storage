@@ -1,0 +1,121 @@
+.btn
+	background-color $azul
+	border none
+	border-radius 10px
+	color white
+	cursor pointer
+	display block
+	height 4.2rem
+	margin 1rem auto
+	max-width 20rem
+	padding 1rem 2rem
+	text-align center
+	transitionBase()
+	width 100%
+	
+	&:active,
+	&:focus,
+	&:hover
+		background-color lighten($azul, 40%)
+		color white
+		outline none !important
+
+
+	&-big
+		font-size 3rem
+		height auto
+		max-width 30rem
+		
+	&-large
+		max-width 55rem
+	
+	&-remove
+		background-color transparent
+		border-radius 0
+		cursor pointer
+		height auto
+		margin 0.37rem auto
+		max-width auto
+		opacity 0.5
+		padding 0
+		
+		&:hover
+			background-color transparent
+			opacity 0.99
+
+		
+		.icon
+			color $brand-danger
+			font-size 2rem
+			
+	&-menu
+		background-color white
+		border none
+		cuadrado(6rem)
+		cursor pointer
+		display inline-block
+		// margin 2.5rem 0 1rem
+		outline 0 !important
+		outline none !important
+		padding 0
+		position relative
+
+		.m-line
+			background-color $azul
+			border-radius 1rem
+			display block
+			height 0.5rem
+			left 15%
+			margin 0
+			padding 0
+			position absolute
+			transitionBase()
+			width 70%
+			
+
+			&:nth-of-type(1)
+				top 1.5rem
+			
+			&:nth-of-type(2)
+				top 50%
+				transform translateY(-@top)
+			
+			&:nth-of-type(3)
+				bottom 1.5rem
+				
+
+		&.active
+			outline none !important
+			outline 0 !important
+			z-index 15 
+			
+			.m-line
+				&:nth-of-type(1)
+					left 50%
+					top 50%
+					transform translate3d(-50%,-50%,0) rotate(-45deg)
+					
+				&:nth-of-type(2)
+					opacity 0
+
+				&:nth-of-type(3)
+					bottom unset
+					left 50%
+					top 50%
+					transform translate3d(-50%,-50%,0) rotate(45deg)
+			
+
+	&-right
+		float right
+		
+
+	&-stop
+		background-color $gris[1]
+		
+	&-delete
+		background-color estados[detenido]
+		
+	&-submit
+		background-color $verde
+		
+	

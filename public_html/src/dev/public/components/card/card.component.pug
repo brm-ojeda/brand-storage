@@ -1,0 +1,20 @@
+include ../../../templates/partials/mixins.pug
+
+//Card
+article.card
+	//Titulo
+	h3.card-title
+		ng-content(select="card-title")
+	///-Titulo
+	
+	//Imagen
+	.card-img
+		ng-content(select="card-img")
+	///-Imagen
+
+	//Descripcion
+	.card-desc
+		ng-content(select="card-desc")
+	///-Descripcion
+
+///-Card

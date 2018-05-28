@@ -1,0 +1,48 @@
+include ../../../templates/partials/mixins.pug
+
+header.container-fluid
+	.row
+		//Logo
+		.col-logo
+			.logo
+				+image('layout/logo-brm.svg', 'BRM | Grandes Interacciones')
+				//- a(*ngIf="router.url == '/pmo';"): +image('layout/logo-brm.svg', 'BRM | Grandes Interacciones')
+
+				//- a(*ngIf="router.url == '/ejecutivo' ", [routerLink]="['/ejecutivo']"): +image('layout/logo-brm.svg', 'BRM | Grandes Interacciones')
+
+				//- a(*ngIf="router.url == '/usuario' ", [routerLink]="['/usuario']"): +image('layout/logo-brm.svg', 'BRM | Grandes Interacciones')
+
+		///-Logo
+
+		//Navegacion
+		.col-btn
+			button.btn.btn-menu(type="button", (click)="toggleMenu()", [class.active]="menuState")
+				span.m-line
+				span.m-line
+				span.m-line
+
+		.col-10
+		
+			nav.menu([class.active]="menuState")
+				.container-menu
+					ul.menu-list
+						li
+							a BRM Brand
+						
+						li
+							a Herramientas
+						
+						li
+							a(href="https://drive.google.com/drive/folders/1AyzWkc3o7zGDHVN4JNeUaZlC2uv-sF8N?usp=sharing" target="_blank") Manuales de Marca
+						
+						li
+							a Video
+						
+						li
+							a Audio
+						
+						li
+							a Recursos
+		
+		///-Navegacion
+

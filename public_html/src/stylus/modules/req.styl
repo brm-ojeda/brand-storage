@@ -1,0 +1,121 @@
+.content-instruccion,
+.list-links
+	background-color white
+	border-radius 5px
+	padding 1rem 2rem
+	
+
+.ot
+	&-header
+		background-color $azul !important
+		display none
+		// height 47vh
+		// position absolute
+		// width 25%
+		// z-index 2
+		
+		article
+			background-color transparent !important
+			color white
+			line-height 1
+			
+		p
+			font-size 0.9rem
+
+	&-desc-tab
+		text-align left
+
+	&-list
+			background-color white
+			border-bottom 1px solid $gris[2]
+			margin 0 auto
+			overflow-x scroll
+			// max-width 95%
+			// padding 0
+			
+			&:nth-last-of-type(1)
+				border-bottom-color transparent
+			
+			ngb-accordion
+				display block
+				width 200%
+				
+				&::-webkit-scrollbar-track
+					background-color lighten($gris[0], 40%)
+
+				&::-webkit-scrollbar
+					background-color lighten($azul, 40%)
+					width 1rem
+
+				&::-webkit-scrollbar-thumb
+					background-color lighten($azul, 40%)
+					border-radius 1rem
+				
+				.card
+					// display block
+					float left
+					width 25rem
+					
+				for x in 1..20
+					.card:first-child:nth-last-child({x}),
+					.card:first-child:nth-last-child({x}) ~ .card 
+						// margin-left ((100% - (12.8% * x ) )/2)
+						width (95% / x)
+						
+			
+			p
+				line-height 1
+				
+			.btn
+				display inline-block
+				
+			// .card
+			// 	&-header
+			// 		a
+			// 			height 47vh						
+				
+
+.req
+	&-comments
+		background-color white
+		border-radius 5px
+		padding 1rem 2rem
+		
+		.comment
+			border-bottom 1px solid $gris[2]
+			margin 2rem auto
+			padding 1rem 2rem
+			position relative
+			
+			&:nth-last-of-type(1)
+				border-bottom-color transparent
+			
+			&-user
+				bottom -0.8rem
+				position absolute
+				right 0
+	
+
+	&-comment-form
+		margin 1rem auto
+		max-width 90%
+		
+
+@media (min-width:770px)
+	.ot
+		&-header
+			display block
+			
+			p
+				font-size 1.4rem
+				
+		&-list
+			overflow-x auto
+			width auto
+		
+			ngb-accordion
+				width auto
+				
+				.card
+					float none
+					width 100% !important

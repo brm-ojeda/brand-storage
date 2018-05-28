@@ -1,0 +1,55 @@
+// datepicker.styl
+
+.datepicker
+	
+	
+	.bg-primary
+		background-color $azul !important
+		
+	.btn
+		&-link
+			height 3rem
+			margin 0
+			
+
+	& > .dropdown-menu
+		animation 0.3s ease-out 
+		animation-delay 0.3s
+		animation-direction normal
+		animation-fill-mode forwards
+		animation-name dateIn
+		animation-play-state running
+		background-color #fff
+		left 50%  !important
+		max-width 30rem
+		opacity 0
+		position absolute
+		top 50% !important
+		transform translate3d(-50%,-50%,0)
+		transitionBase()
+		width 100%
+		z-index 2
+
+		&:active,
+		&:focus
+			outline 0 !important
+			outline none !important
+			
+		.ngb-dp-month
+			margin-top 2rem
+			width 100%
+			
+		.ngb-dp-weekday
+			color $azul !important
+			width (100%/7)
+			
+		.ngb-dp-week
+			.ngb-dp-day
+				font-size 2rem
+				height 3.5rem !important
+				text-align center !important
+				width (100%/7) !important
+					
+
+				.btn-light
+					width 100% !important

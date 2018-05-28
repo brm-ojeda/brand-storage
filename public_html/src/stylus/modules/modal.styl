@@ -1,0 +1,105 @@
+.modal
+	padding-right 0 !important
+	
+	.close
+		z-index 100
+		
+	&-content
+		background-color transparent
+		border none
+		border-radius 0
+		box-shadow none
+		position initial
+		
+	&-dialog
+		animation 0.3s ease-out reverse backwards paused
+		background-color $azul
+		border-radius 0
+		bottom 0
+		box-shadow none
+		color white
+		left 50%
+		margin 0 auto
+		opacity 0
+		padding 1rem 5rem
+		position absolute
+		transform translateX(-50%)
+		z-index 1041
+		
+		h2,
+		h3,
+		h4
+			color white
+			margin-top 5rem
+			text-align center
+			
+		.btn
+			background-color #63ae27
+			border none
+						
+		.close
+			background-color transparent
+			border none
+			color white
+			font-size 3rem
+			margin 0
+			position absolute
+			right -5.5rem
+			top -5.5rem
+			
+			.icon
+				circ(100%)
+				display block
+				
+
+
+		.form-group
+			border-bottom-color white
+			color white
+			
+			input,
+			label,
+			select,
+			textarea
+			.icon
+				color white				
+
+		.msn-place
+			background-color #ed872c
+	
+	&-backdrop
+		animation 0.3s ease-out reverse backwards paused
+		background-color black
+		display block
+		opacity 0
+		pointer-events none
+		transitionBase()
+		
+		&.fade.show
+			animation-direction normal
+			animation-fill-mode forwards
+			animation-name backfadeIn
+			animation-play-state running
+			
+
+
+.show
+	opacity 0.99
+	
+	.modal-dialog
+		animation-delay 0.3s
+		animation-direction normal
+		animation-fill-mode forwards
+		animation-name modalIn
+		animation-play-state running
+		
+
+@media (min-width:$screen-sm)
+	.modal
+		&-dialog
+			max-width 52.7rem
+			
+		
+	
+		
+	

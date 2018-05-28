@@ -1,0 +1,10 @@
+include ../../../templates/partials/mixins.pug
+
+
+section.container-fluid.container-login([class.loaded]="loaded", *ngIf="show" )
+
+	.logo: +image('layout/logo-brm.svg', 'BRM | Grandes Interacciones')
+
+	p.text-center para acceder al BRM BRAND STORAGE:
+
+	button.btn.btn-large(type="button", (click)="login($event)", [class.loading]="cargador") Accede a tu cuenta corporativa

@@ -1,0 +1,52 @@
+//se pueden declarar con funciones
+// make-prefix-column(num)
+// make-prefix-column-offset(num)
+// @stylint off
+
+.col
+	&-2
+		make-sm-column(2)
+	
+	&-4
+		make-sm-column(4)
+		
+
+	&-10
+		make-sm-column(10)
+		
+
+	&-logo,
+	&-btn
+		make-xs-column(6)
+		
+	&-logo
+		make-sm-column(2)
+
+
+.offset
+	&-6
+		make-sm-column-offset(6)
+			
+.form
+	&-full
+		make-sm-column(12)
+		// clearfix()
+		
+	&-half
+		make-sm-column(6)
+		transitionBase()
+		
+
+.container-card
+	.item
+		make-sm-column(4)
+		make-md-column(4, 3rem)
+	
+
+@media (min-width: 768px)
+	.col
+		&-btn
+			display none
+
+
+// @stylint on

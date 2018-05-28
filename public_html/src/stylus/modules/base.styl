@@ -1,0 +1,61 @@
+// @stylint off
+::selection /* WebKit/Blink Browsers */
+	background $azul
+	color #fff
+	text-shadow 0px 0px 5px rgba(255, 255, 255, .75)
+
+::-moz-selection /* Gecko Browsers */
+	background $azul
+	color #fff
+	text-shadow 0px 0px 5px rgba(255, 255, 255, .75)
+
+
+::-webkit-file-upload-button
+	cursor pointer
+
+// @stylint on
+a
+	color $amarillo
+	transitionBase()
+
+	&:hover
+		text-decoration underline
+
+	img
+		border 0 !important
+
+body
+	background-color $gris[0]
+	background-repeat no-repeat
+	background-size cover
+	color $gris[1]
+	font-family $font-stack
+	font-size 1.4rem
+	font-weight $light
+	path('layout/bg.jpg')
+	// height 100%
+
+
+
+h1
+	font-size 2.4rem
+
+h1,h2,h3,h4,h5,h6
+	color $azul
+	font-family $font-stack
+	font-weight $normal
+	letter-spacing 0.3rem
+	margin 0.5rem auto
+	text-transform uppercase
+
+input,select,textarea
+	transitionBase()
+	&:active
+	&:focus
+		outline none !important
+
+
+p
+	// line-height 1.2
+	font-size 1.4rem
+	margin 0.5rem auto

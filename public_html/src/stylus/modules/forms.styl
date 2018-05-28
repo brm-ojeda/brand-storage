@@ -1,0 +1,193 @@
+.form
+	// &-half
+		
+			
+	&-group
+		border none
+		border-bottom 1px solid $azul
+		border-radius 0
+		color $azul
+		margin 2rem auto
+		padding 1rem 2rem
+		position relative
+		transitionBase()
+		z-index 1
+
+		&.active
+			border-color $amarillo
+			
+			label
+				pointer-events none
+				top -1rem
+				transform scale(0.8) translateY(0)
+			
+		
+		&.form-checkbox
+			background-color transparent
+			border-color transparent
+			margin 0 auto
+			padding-left 0
+			padding-right @padding-left
+			text-align center
+			
+			input,
+			label
+				display inline-block
+				vertical-align top
+			
+			label
+				cursor: pointer
+				max-width 80%
+				pointer-events all
+				position relative
+				position relative
+				text-align left
+				text-transform none !important
+				top auto
+				transform none
+				z-index 1
+				
+				a
+					position relative
+					z-index 2
+				
+			input
+				margin-top 0.4rem
+				max-width 2rem
+				
+		
+		&.form-file
+			background-color transparent
+			border-color transparent
+			padding-left 1rem
+			padding-right @padding-left
+			text-align center
+			
+			label
+				color black
+				cursor pointer
+				display block
+				text-transform none !important
+				position relative
+				// text-align left
+				transform none
+				top auto
+				
+			input
+				cursor pointer
+				display block
+				margin 0 auto
+				max-width 30rem
+				
+				
+		&.form-link
+			.clone
+				cursor pointer
+				display block
+				position absolute
+				right 0
+				top 50%
+				transform translateY(-50%)
+				
+				.icon
+					position initial !important
+			
+		fieldset
+			border none
+			text-align center
+			
+		label
+			font-weight $light
+			left 0
+			pointer-events none
+			position absolute
+			text-transform uppercase
+			top 50%
+			transform translateY(-50%)
+			transitionBase()
+			z-index 2
+			
+			sup
+				font-size 82%
+				top -0.2em
+
+		input,
+		select,
+		textarea
+			background-color transparent
+			border none
+			color $azul
+			margin 0
+			min-height 2.3rem
+			padding 0
+			width 100%
+			
+		.icon
+			color $azul
+			left -2rem
+			position absolute
+
+		.label-area
+			top 15%
+		
+
+		.textarea
+			textarea
+				height 11rem	
+				resize none		
+	
+
+	&-timer
+		border-bottom-color transparent !important
+		margin 0 auto
+		max-width 15rem
+		
+
+		input
+			background-color white
+			color $azul !important
+			display inline-block
+			max-width 40%
+			padding 0.4rem
+			vertical-align middle
+			
+			&::-webkit-input-placeholder
+				color $azul
+
+			&::-moz-placeholder
+				color $azul
+			
+			&:-ms-input-placeholder
+				color $azul
+
+			&:-moz-placeholder
+				color $azul
+		
+		span
+			padding 0 0.5rem
+
+.msn-place
+	color $alert-danger
+	
+	
+@media (min-width: 410px)
+	.form
+		&-group.form-checkbox
+			max-width 90%
+		
+		textarea
+			resize none
+
+@media (min-width: $screen-sm)
+	.form-file
+		float left
+		width 50%
+		
+	.msn-place
+		background-color $azul
+		border-radius 10px
+		color white
+		padding 0 1.5rem
+		position absolute
+		right 0
+		

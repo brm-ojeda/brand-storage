@@ -1,0 +1,20 @@
+include ../../templates/partials/mixins.pug
+
+div.overlay(*ngIf="!logged")
+
+div(*ngIf="logged")
+	header-app
+
+//- div(*ngIf="!logged")
+login([show]="!logged", (state)="logIn()")
+
+section.container-fliud(*ngIf="logged")
+	div.row
+		article.col-4.offset-6
+			h1 Bienvenido a BRM Brand Storage
+			p Aquí encontrará todo lo necesario para hacer un buen uso de la marca en comunicación interna y externa de la compañía.
+
+			a([routerLink]="['guidelines']" ) Conózca los guidelines antes de hacer uso de los assets
+
+
+footer-app
