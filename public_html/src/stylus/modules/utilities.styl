@@ -65,13 +65,50 @@
 			display inline-block
 			vertical-align middle
 			
+	&-desc
+		margin-top 1.7rem
 		
+					
 	&-justify
 		text-align justify
 		text-align-last left
 		
+	&-light
+		font-weight $light
+		margin 2.5rem 0
+		
 	&-left
 		text-align left
+		
+	&-go
+		margin-top 3rem
+		
+		&:hover
+			i
+				background-color #ffffffcc
+				margin-left 25px
+				transitionBase()
+		
+		i
+			border 1px solid
+			border-radius 100%
+			display inline-block
+			font-size 2rem
+			height 3.5rem
+			margin-left 15px
+			padding 0.6rem
+			text-align center
+			transitionBase()
+			vertical-align bottom
+			width 3.5rem
+			
+
+		span
+			display inline-block
+			width 60%
+	
+		
+
 			
 @media(min-width:$screen-sm)
 	// .stick-lg

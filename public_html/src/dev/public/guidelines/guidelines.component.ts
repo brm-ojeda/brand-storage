@@ -22,29 +22,24 @@ export class GuideComponent implements OnInit {
 		//arrays
 		this.guides = [
 			{
-				title: 'Tenía en su casa una ama que pasaba de los cuarenta',
-				img: 'img.jpg',
-				desc: 'En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.',
+				img: '/layout/manual-i-c.svg',
+				title: 'Manual de imágen corporativa BRM',
+				desc: 'Con este manual aprenderá sobre las bases de la marca, fuentes, colores y la forma correcta de usarlos.',
+				link:'hola'
+				subtitle:'sub'
+			},
+			{
+				img: '/layout/manual-i-v.svg',
+				title: 'Manual de imágen y video BRM',
+				desc: 'Este es el manual que debería usar para el uso de fotografías y videos con la marca.',
 				link:'hola'
 			},
 			{
-				title: 'Tenía en su casa una ama que pasaba de los cuarenta',
-				img: 'img.jpg',
-				desc: 'En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.',
+				img: '/layout/manual-i-coob.svg',
+				title: 'Manual de imágen coobranding',
+				desc: 'Aquí encontrará una guía de como utilizar la marca de la mano de otras marcas y aliados.',
 				link:'hola'
 			},
-			{
-				title: 'Tenía en su casa una ama que pasaba de los cuarenta',
-				img: 'img.jpg',
-				desc: 'En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.',
-				link:'hola'
-			},
-			{
-				title: 'Tenía en su casa una ama que pasaba de los cuarenta',
-				img: 'img.jpg',
-				desc: 'En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.',
-				link:'hola'
-			}
 
 		]
 

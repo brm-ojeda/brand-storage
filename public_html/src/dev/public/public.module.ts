@@ -29,6 +29,8 @@ import { CardComponent } from './components/card/card.component';
 //Vistas
 import { HomeComponent } from './home/home.component';
 import { GuideComponent } from './guidelines/guidelines.component';
+import { DemoComponent } from './demo/demo.component';
+import { LogosComponent } from './logos/logos.component';
 
 
 //config app Firebase
@@ -60,7 +62,9 @@ export const firebaseConfig = {
     LoginComponent,
   	CardComponent,
     HomeComponent,
-    GuideComponent
+    GuideComponent,
+    DemoComponent,
+    LogosComponent
   ],
   providers: [
     RequestService,

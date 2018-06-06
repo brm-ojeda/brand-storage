@@ -1,9 +1,25 @@
 .container
-	&-fluid
-		clearfix()
+	
+	&-bienvenido
+		margin 12rem 0 2rem
 		
 		h1
-			font-size 1.8rem
+			font-size 4rem
+			font-weight 300			
+			text-transform none
+
+	&-compu
+		float left
+		margin-left -13%
+		position absolute
+
+		img
+			padding 5rem 0 3rem
+			width 100%
+			
+	&-fluid
+		
+		clearfix()			
 	
 	&-login
 		background-color #fff
@@ -41,9 +57,13 @@
 		clearfix()
 		padding 0.5rem
 		text-align center
+		
+
+	
 
 @media (min-width: $screen-sm)
 	.container
+
 		&-login
 			// position absolute
 			padding 1rem 7rem
@@ -72,4 +92,16 @@
 		
 		&-ot
 			padding 0rem 2rem
+			
+			
+@media (max-width: $screen-sm)
+	.container
+		
+		&-compu
+			display none
+			
+		&-bienvenido
+			margin 2rem 0 2rem
+
+
 			

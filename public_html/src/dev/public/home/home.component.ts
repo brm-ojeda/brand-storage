@@ -20,5 +20,4 @@ export class HomeComponent implements OnInit {
     this.document.body.classList.remove('login');
   }
 
-
 }
