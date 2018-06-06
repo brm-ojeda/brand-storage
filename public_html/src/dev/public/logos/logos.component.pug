@@ -10,4 +10,20 @@ section.container-fluid.container-card(@list="")
 	div.row
 		h1.text-light Logos
 
+		ng-container(*ngFor=" let logo of logos; let key = index; ")
+			
+			.item(@items="")
+				card
+					
+					card-title {{logo.title}}
+
+					card-img.logo
+						+image('{{logo.img}}', '{{logo.title}}')
+
+					card-desc
+
+						a.btn.btn-default( [href]="logo.link" ) 
+							| Descargar
+							i.icon-angle-right
+
 footer-app

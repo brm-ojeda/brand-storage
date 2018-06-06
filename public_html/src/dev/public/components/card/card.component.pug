@@ -2,15 +2,16 @@ include ../../../templates/partials/mixins.pug
 
 //Card
 article.card
-	//Imagen
-	.card-img
-		ng-content(select="card-img")
-	///-Imagen
 
 	//Titulo
 	h3.card-title
 		ng-content(select="card-title")
 	///-Titulo
+
+	//Imagen
+	.card-img
+		ng-content(select="card-img")
+	///-Imagen
 
 	//Descripcion
 	.card-desc

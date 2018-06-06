@@ -26,7 +26,6 @@ export class GuideComponent implements OnInit {
 				title: 'Manual de imágen corporativa BRM',
 				desc: 'Con este manual aprenderá sobre las bases de la marca, fuentes, colores y la forma correcta de usarlos.',
 				link:'hola'
-				subtitle:'sub'
 			},
 			{
 				img: '/layout/manual-i-v.svg',
