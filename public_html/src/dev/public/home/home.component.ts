@@ -12,12 +12,25 @@ export class HomeComponent implements OnInit {
   	) { }
 
   ngOnInit() {
-  	this.document.body.classList.add('login');
+    this.document.body.classList.add('login');
+
+    if(this.logged){
+      this.document.body.classList.add('home');
+
+   }
+
   }
 
   logIn(){
     this.logged = !this.logged;
     this.document.body.classList.remove('login');
+    this.document.body.classList.add('body-home');
+  }
+
+  //esto se ejecuta cuando cambia el componente.
+  //Ex. cuando el usuario pasa de / a /logos
+  ngOnDestroy(){
+    this.document.body.classList.remove('body-home');
   }
 
 }

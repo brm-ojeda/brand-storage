@@ -52,6 +52,21 @@ export class LogosComponent implements OnInit {
 				img: '/layout/logo-BRM-azul.svg',
 				link:'hola'
 			},
+			{
+				title: 'Logo blanco BRM .AI',
+				img: '/layout/logo-BRM-azul.svg',
+				link:'hola'
+			},
+			{
+				title: 'Logo blanco BRM .PNG',
+				img: '/layout/logo-BRM-azul.svg',
+				link:'hola'
+			},
+			{
+				title: 'Logo blanco BRM .GIF',
+				img: '/layout/logo-BRM-azul.svg',
+				link:'hola'
+			}
 
 		]
 

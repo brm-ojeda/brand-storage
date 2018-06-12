@@ -1,29 +1,31 @@
 .card
 	background-color: #fff
 	border-radius 10px
+	float left
 	margin 1rem auto
 	padding 2.7rem 2rem 1rem
+	position relative
 	text-align center
-	
+	width 100%
+
 	&-desc
 		line-height: 2rem
 		margin-top: 2rem
-			
+	
 	&-title
 		font-weight 300
 		line-height: 3rem
 		margin-bottom 2rem	
 		text-transform: none
-	
 
 	img
 		// max-width 6rem
 		display block
-		height 5.6rem
+		height 6rem
 		margin 0 auto
 		position relative
 		text-align center
-			
+	
 		&::after
 			color $azul
 			content '\f127' attr(alt)
@@ -38,7 +40,7 @@
 			top 50%
 			transform translateY(-50%)
 			width 100%
-			
+
 		&::before
 			background-color $gris[0]
 			content ''

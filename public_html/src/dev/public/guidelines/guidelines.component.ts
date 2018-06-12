@@ -39,6 +39,12 @@ export class GuideComponent implements OnInit {
 				desc: 'Aquí encontrará una guía de como utilizar la marca de la mano de otras marcas y aliados.',
 				link:'hola'
 			},
+			{
+				img: '/layout/manual-i-coob.svg',
+				title: 'Manual de imágen coobranding',
+				desc: 'Aquí encontrará una guía de como utilizar la marca de la mano de otras marcas y aliados.',
+				link:'hola'
+			}
 
 		]
 

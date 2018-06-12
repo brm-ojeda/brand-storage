@@ -4,27 +4,29 @@ include ../../templates/partials/mixins.pug
 
 header-app
 
-
 section.container-fluid.container-card(@list="")
 
 	div.row
 		h1.text-light Guidelines
-		
+
 		ng-container(*ngFor=" let guide of guides; let key = index; ")
-			
+
 			.item(@items="")
 				card
 
 					card-title {{guide.title}}
-					
+
 					card-img
 						+image('{{guide.img}}', '{{guide.title}}')
 
 					card-desc
 						p {{guide.desc}}
 
-						a.btn.btn-default( [href]="guide.link" ) 
+						a.btn.btn-default( [href]="guide.link" )
 							| Descargar
 							i.icon-angle-right
 
-footer-app
+			.clearfix(*ngIf=" (key+1) % 3 == 0 && key > 0; ")
+
+//- footer-app([classes]="")
+footer-app([classes]="'footer-cards'")

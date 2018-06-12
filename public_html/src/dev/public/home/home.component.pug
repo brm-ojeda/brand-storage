@@ -21,9 +21,10 @@ section.container-fliud(*ngIf="logged")
 			p.text-desc Aquí encontrará todo lo necesario para hacer un buen uso de la marca en comunicación interna y externa de la compañía.
 
 			p.text-go
-				a(href='/guidelines')
+				a([routerLink]="['/guidelines']")
 					|
 					span Conózca los guidelines antes de hacer uso de los assets
 					i.icon-angle-right
 
-footer-app
+//- footer-app([classes]="")
+footer-app([classes]="'footer-bottom'")

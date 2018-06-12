@@ -1,14 +1,16 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit, Inject, Input, Output } from '@angular/core';
 @Component({
   selector: 'footer-app',
   templateUrl: './footer.component.html'
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+	@Input() classes:string;
 
-  ngOnInit() {
-  }
+	constructor() { }
+
+	ngOnInit() {
+	}
 
 
 }
