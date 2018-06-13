@@ -5,14 +5,13 @@ import { list, items } from '../../services/list.animation';
 
 
 @Component({
-	templateUrl: './logos.component.html',
+	templateUrl: './brand.component.html',
 	animations:[list(),items()]
 	
 })
-export class LogosComponent implements OnInit {
+export class BrandComponent implements OnInit {
 
-	logos:any;
-
+	brands:any;
 
 	constructor(
 		@Inject(DOCUMENT) private document: any
@@ -21,7 +20,7 @@ export class LogosComponent implements OnInit {
 	ngOnInit() {
 
 		//arrays
-		this.logos = [
+		this.brands = [
 			{
 				title: 'Logo azul BRM .AI',
 				img: '/layout/logo-BRM-azul.svg',

@@ -30,7 +30,8 @@ import { CardComponent } from './components/card/card.component';
 import { HomeComponent } from './home/home.component';
 import { GuideComponent } from './guidelines/guidelines.component';
 import { DemoComponent } from './demo/demo.component';
-import { LogosComponent } from './logos/logos.component';
+import { BrandComponent } from './brand/brand.component';
+import { HerramientasComponent } from './herramientas/herramientas.component';
 
 
 //config app Firebase
@@ -63,8 +64,9 @@ export const firebaseConfig = {
   	CardComponent,
     HomeComponent,
     GuideComponent,
-    DemoComponent,
-    LogosComponent
+    BrandComponent,
+    HerramientasComponent,
+    DemoComponent
   ],
   providers: [
     RequestService,

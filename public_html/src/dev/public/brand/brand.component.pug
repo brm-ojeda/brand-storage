@@ -10,19 +10,19 @@ section.container-fluid.container-card(@list="")
 	div.row
 		h1.text-light Logos
 
-		ng-container(*ngFor=" let logo of logos; let key = index; ")
+		ng-container(*ngFor=" let brand of brands; let key = index; ")
 			
 			.item(@items="")
 				card
 					
-					card-title {{logo.title}}
+					card-title {{brand.title}}
 
 					card-img
-						+image('{{logo.img}}', '{{logo.title}}')
+						+image('{{brand.img}}', '{{brand.title}}')
 
 					card-desc
 
-						a.btn.btn-default( [href]="logo.link" ) 
+						a.btn.btn-default( [href]="brand.link" ) 
 							| Descargar
 							i.icon-angle-right
 
